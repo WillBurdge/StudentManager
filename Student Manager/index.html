@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Oregon_Ducks_logo.svg/1200px-Oregon_Ducks_logo.svg.png">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Student Manager</h1>
+    <div class="top-bar">
+      <div id="time" style="font-weight: bolder;"></div>
+      <div id="weather" style="font-weight: bolder;"></div>
+    </div>
+    <div class="main-content">
+      <div class="left-column">
+        <div class="calendar">
+          <h2>Calendar</h2>
+          <div id="calendar"></div>
+        </div>
+        <div class="notes">
+          <h2>Notepad</h2>
+          <textarea id="notes" placeholder="Take a note"></textarea>
+          <button id="save-btn" class="save-btn">Save</button>
+        </div>
+      </div>
+      <div class="right-column">
+        <div class="todo">
+          <h2>To-Do List</h2>
+          <ul id="todo"></ul>
+          <div class="add-task">
+            <input type="text" id="new-task" placeholder="Add a task...">
+            <button id="add-btn">Add</button>
+            <ul id="task-list"></ul> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
